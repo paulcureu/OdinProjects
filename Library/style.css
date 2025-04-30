@@ -10,6 +10,7 @@ h1{
     text-align: center;
     justify-content: center;
 }
+
 .btn{
     text-decoration: none;
     background-color: #04AA6D; /* Green */
@@ -23,3 +24,52 @@ h1{
     border-radius: 150px;
 
 }
+.btn-submit {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 150px;
+}
+.library{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+label{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    border-radius: 5px;
+}
+.checkbox{
+    margin-top: 15px;
+}
+.AddBook{
+    display: inline-block;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    border:none;
+    border-radius: 10px;
+    background-color: #04AA6D;
+}
+

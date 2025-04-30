@@ -8,8 +8,41 @@
 <body>
     <h1>Welcome to Library</h1>
     <div class="center">
-        <button class = "btn">Add Book</button>
+        <button class = "btn" onclick="showOrHide()">Add Book</button>
     </div>
 
+    <div class = "center">
+        <form action = "/process_form" method="post" class = "AddBook" id = "showOrHide">
+            <label for="bookTitle">Book Title:</label><br>
+            <input type="text" id="bookTitle" name="bookTitle"><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author"><br>
+            <label for="pages">Pages:</label><br>
+            <input type="number" id="pages" name="pages"><br>
+            <input class = "checkbox" type = "checkbox" name = "ReadIt" value = "ReadIt">
+            <label>Read It?</label><br>
+            <button class = "btn-submit">Add Book</button>
+        </form>
+    </div>
+    <div class = "library" id = "showOrHideLibrary">
+        <form class = "book">
+            <label for="bookTitle">Book Title:
+                <output name = "title" for = "bookTitle"></output>
+            </label><br>
+            <label for="author">Author:
+                <output name = "author" for = "author"></output>
+            </label><br>
+            <label for="pages">Pages:
+                <output name = "pages" for = "pages"></output>
+            </label><br>
+            <input class = "checkbox" type = "checkbox" name = "ReadIt" value = "ReadIt">
+            <label>Read It</label><br>
+        </form>
+        <div class = "book"></div>
+        <div class = "book"></div>
+        <div class = "book"></div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
