@@ -40,6 +40,17 @@ function addBookToLibrary() {
     let pages = document.getElementById("pages").value;
     let readIt = document.getElementById("readIt").checked;
     let newBook = new Book(title, author, pages, readIt, readIt, readIt);
+
+    let alreadyExists = myLibrary.some(book =>
+        book.title === title &&
+        book.author === author &&
+        book.pages === pages &&
+        book.readIt === readIt
+    );
+    if(alreadyExists){
+        window.alert("Book already exists");
+        return;
+    }
     myLibrary.push(newBook);
     rander();
 }
