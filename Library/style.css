@@ -25,24 +25,22 @@ h1{
 
 }
 .btn-submit {
-    text-decoration: none;
+    color:white;
     background-color: blue;
-    color: white;
-    padding: 6px 8px;
-    text-align: center;
-    font-size: 14px;
-    margin: 20px 2px;
-    cursor: pointer;
-    border: none;
-    border-radius: 150px;
+    padding: 5px 12px;
 }
-.library{
+#library{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+p{
+    margin: 0;
+    margin-right: 5px;
+    font-weight: bold;
 
+}
 .book {
     background: #f4f4f4;
     border: 1px solid #ccc;
